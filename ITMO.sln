@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ITMO.WPFCsCourse2023", "ITMO.WPFCsCourse2023", "{0DBC5B96-BC76-45FC-8AF1-51F131DCBD3F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ITMO.WinFormsCsCourse2023.Lab1", "ITMO.WinFormsCsCourse2023.Lab1", "{CDFBBE01-83A2-49E3-9E2E-0CE6F3EE21AA}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.WinCsCourse2023\ITMO.WinFormsCsCourse2023\ITMO.WinFormsCsCourse2023.Lab1\ITMO.WinFormsCsCourse2023.Lab1.sln = ITMO.WinCsCourse2023\ITMO.WinFormsCsCourse2023\ITMO.WinFormsCsCourse2023.Lab1\ITMO.WinFormsCsCourse2023.Lab1.sln
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ITMO.WinFormsCsCourse2023.Lab2", "ITMO.WinFormsCsCourse2023.Lab2", "{FB9FEC9A-7381-4662-A2FF-CD1F92F6AEB5}"
 	ProjectSection(SolutionItems) = preProject
