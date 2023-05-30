@@ -52,8 +52,8 @@ namespace ITMO.WPFCsCourse2023.Lab4.Task1
        
         private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty, 
-                ((ListBoxItem)listBox1.SelectedItem).FontFamily);
+            richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty,
+                 new FontFamily(listBox1.SelectedValue.ToString()));
         }
     }
 }
