@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
-        <ToolBar Height="26" Name="toolBar1" Width="265" DockPanel.Dock="Top">
+        <ToolBar Height="26" Name="toolBar1" Width="200" DockPanel.Dock="Top">
             <Button Click="Button_Click">Bold</Button>
             <Button Click="Button_Click_1">Italic</Button>
             <Slider Name="Slider1" Minimum="2" Maximum="72" Width="100" ValueChanged="Slider1_ValueChanged"></Slider>
-            <ComboBox Name="comboBox1" Width="75" SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+            
         </ToolBar>
         <Grid Name="grid1" >
             <Grid.ColumnDefinitions>

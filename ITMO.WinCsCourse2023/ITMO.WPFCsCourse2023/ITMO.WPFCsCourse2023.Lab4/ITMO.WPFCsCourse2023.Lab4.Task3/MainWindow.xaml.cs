@@ -26,7 +26,7 @@ namespace ITMO.WPFCsCourse2023.Lab4.Task1
 
             foreach (FontFamily F in Fonts.SystemFontFamilies)
             {
-                comboBox1.Items.Add(F.ToString());
+                listBox1.Items.Add(F.ToString());
             }
         }
 
@@ -49,10 +49,7 @@ namespace ITMO.WPFCsCourse2023.Lab4.Task1
             catch { }
         }
 
-        private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty, new FontFamily(comboBox1.Text));
-        }
+       
         private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             richTextBox1.Selection.ApplyPropertyValue(FontFamilyProperty, 
