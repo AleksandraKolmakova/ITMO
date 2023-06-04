@@ -19,10 +19,12 @@ namespace Calculator
 		private System.Windows.Forms.Button btn_plus;
 		private System.Windows.Forms.Button btn_minus;
 
-        private System.Windows.Forms.Button btr_kvdigit;
-        private System.Windows.Forms.Button btr_kvkor;
-        private System.Windows.Forms.Button btr_obrznach;
-        private System.Windows.Forms.Button btr_stepen;
+        private Button btr_kvdigit;
+        private Button btr_kvkor;
+        private Button btr_obrznach;
+        private Button btr_stepen;
+        private Button btr_kubKor;
+        private Button btr_factotial;
 
         private System.Windows.Forms.Button btn0;
 		private System.Windows.Forms.Button btn9;
@@ -66,8 +68,10 @@ namespace Calculator
 			InitializeComponent();
 			// При запуске приложения на экране будет нуль
 			txtOutput.Text = "0";
-		
-		}
+            this.Width = 290;
+            this.Height = 287;
+            usualToolStripMenuItem.Enabled = false;
+        }
 
 		/// <summary>
 		/// Clean up any resources being used.
@@ -125,6 +129,8 @@ namespace Calculator
             this.btr_stepen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btr_kubKor = new System.Windows.Forms.Button();
+            this.btr_factotial = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -345,25 +351,27 @@ namespace Calculator
             this.usualToolStripMenuItem,
             this.engineerToolStripMenuItem1});
             this.engineerToolStripMenuItem.Name = "engineerToolStripMenuItem";
-            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.engineerToolStripMenuItem.Text = "View";
             // 
             // usualToolStripMenuItem
             // 
             this.usualToolStripMenuItem.Name = "usualToolStripMenuItem";
-            this.usualToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.usualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usualToolStripMenuItem.Text = "Usual";
+            this.usualToolStripMenuItem.Click += new System.EventHandler(this.usualToolStripMenuItem_Click);
             // 
             // engineerToolStripMenuItem1
             // 
             this.engineerToolStripMenuItem1.Name = "engineerToolStripMenuItem1";
-            this.engineerToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.engineerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.engineerToolStripMenuItem1.Text = "Engineer";
+            this.engineerToolStripMenuItem1.Click += new System.EventHandler(this.engineerToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -381,6 +389,7 @@ namespace Calculator
             this.btr_kvdigit.Text = "x²";
             this.toolTip1.SetToolTip(this.btr_kvdigit, "Определение квадрата числа");
             this.btr_kvdigit.UseVisualStyleBackColor = true;
+            this.btr_kvdigit.Visible = false;
             this.btr_kvdigit.Click += new System.EventHandler(this.btr_kvdigit_Click);
             // 
             // btr_kvkor
@@ -392,28 +401,31 @@ namespace Calculator
             this.btr_kvkor.Text = "²√x";
             this.toolTip1.SetToolTip(this.btr_kvkor, "Извлечение квадратного корня");
             this.btr_kvkor.UseVisualStyleBackColor = true;
+            this.btr_kvkor.Visible = false;
             this.btr_kvkor.Click += new System.EventHandler(this.btr_kvkor_Click);
             // 
             // btr_obrznach
             // 
-            this.btr_obrznach.Location = new System.Drawing.Point(282, 138);
+            this.btr_obrznach.Location = new System.Drawing.Point(281, 182);
             this.btr_obrznach.Name = "btr_obrznach";
             this.btr_obrznach.Size = new System.Drawing.Size(40, 40);
             this.btr_obrznach.TabIndex = 65;
             this.btr_obrznach.Text = "1 ⁄x";
             this.toolTip1.SetToolTip(this.btr_obrznach, "Расчет обратного значения");
             this.btr_obrznach.UseVisualStyleBackColor = true;
+            this.btr_obrznach.Visible = false;
             this.btr_obrznach.Click += new System.EventHandler(this.btr_obrznach_Click);
             // 
             // btr_stepen
             // 
-            this.btr_stepen.Location = new System.Drawing.Point(328, 138);
+            this.btr_stepen.Location = new System.Drawing.Point(281, 136);
             this.btr_stepen.Name = "btr_stepen";
             this.btr_stepen.Size = new System.Drawing.Size(40, 40);
             this.btr_stepen.TabIndex = 66;
             this.btr_stepen.Text = "xˣ";
             this.toolTip1.SetToolTip(this.btr_stepen, "Возведение в степень");
             this.btr_stepen.UseVisualStyleBackColor = true;
+            this.btr_stepen.Visible = false;
             this.btr_stepen.Click += new System.EventHandler(this.btr_stepen_Click);
             // 
             // label1
@@ -424,12 +436,39 @@ namespace Calculator
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 67;
             this.label1.Text = "Engineer functions";
+            this.label1.Visible = false;
+            // 
+            // btr_kubKor
+            // 
+            this.btr_kubKor.Location = new System.Drawing.Point(327, 136);
+            this.btr_kubKor.Name = "btr_kubKor";
+            this.btr_kubKor.Size = new System.Drawing.Size(40, 40);
+            this.btr_kubKor.TabIndex = 68;
+            this.btr_kubKor.Text = "³√x";
+            this.toolTip1.SetToolTip(this.btr_kubKor, "Извлечение кубического корня");
+            this.btr_kubKor.UseVisualStyleBackColor = true;
+            this.btr_kubKor.Visible = false;
+            this.btr_kubKor.Click += new System.EventHandler(this.btr_kubKor_Click);
+            // 
+            // btr_factotial
+            // 
+            this.btr_factotial.Location = new System.Drawing.Point(327, 182);
+            this.btr_factotial.Name = "btr_factotial";
+            this.btr_factotial.Size = new System.Drawing.Size(40, 40);
+            this.btr_factotial.TabIndex = 69;
+            this.btr_factotial.Text = "F";
+            this.toolTip1.SetToolTip(this.btr_factotial, "Расчет факториала целого числа");
+            this.btr_factotial.UseVisualStyleBackColor = true;
+            this.btr_factotial.Visible = false;
+            this.btr_factotial.Click += new System.EventHandler(this.btr_factotial_Click);
             // 
             // Calc
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(385, 244);
+            this.Controls.Add(this.btr_factotial);
+            this.Controls.Add(this.btr_kubKor);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btr_stepen);
             this.Controls.Add(this.btr_obrznach);
@@ -581,226 +620,293 @@ namespace Calculator
 				mehanizmcalkulyatora.Sbros();
 				txtOutput.Text = "0";
 			}
-
-            private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
-
+        
+        /// Доп вычисления
+        
             private void btr_kvdigit_Click(object sender, EventArgs e)
             {
-                mehanizmcalkulyatora.DeystvieCalculatora(mehanizmcalkulyatora.Deystvie.StepenKvDigit);
+                txtOutput.Text = mehanizmcalkulyatora.EngineerCalc("kvdigit");
             }
 
             private void btr_kvkor_Click(object sender, EventArgs e)
             {
-                mehanizmcalkulyatora.DeystvieCalculatora(mehanizmcalkulyatora.Deystvie.KvKoren);
+                txtOutput.Text = mehanizmcalkulyatora.EngineerCalc("KvKoren");
             }
 
             private void btr_obrznach_Click(object sender, EventArgs e)
             {
-                mehanizmcalkulyatora.DeystvieCalculatora(mehanizmcalkulyatora.Deystvie.ObrZnach);
+                txtOutput.Text = mehanizmcalkulyatora.EngineerCalc("ObrZnach");
             }
 
             private void btr_stepen_Click(object sender, EventArgs e)
             {
                 mehanizmcalkulyatora.DeystvieCalculatora(mehanizmcalkulyatora.Deystvie.VozvVStepen);
             }
+            private void btr_kubKor_Click(object sender, EventArgs e)
+            {
+                txtOutput.Text = mehanizmcalkulyatora.EngineerCalc("KubKoren");
+            }
+
+            private void btr_factotial_Click(object sender, EventArgs e)
+            {
+                txtOutput.Text = mehanizmcalkulyatora.EngineerCalc("Factorial");
+            }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void usualToolStripMenuItem_Click(object sender, EventArgs e) // form usual
+        {
+            btr_kvdigit.Visible = false;
+            btr_kvkor.Visible = false;
+            btr_obrznach.Visible = false;
+            btr_stepen.Visible = false;
+            btr_kubKor.Visible = false;
+            btr_factotial.Visible = false;
+            label1.Visible = false;
+            this.Width = 290;
+            this.Height = 287;
+            usualToolStripMenuItem.Enabled = false;
+            engineerToolStripMenuItem1.Enabled = true;
+
+        }
+
+        private void engineerToolStripMenuItem1_Click(object sender, EventArgs e) // form engineer
+        {
+            btr_kvdigit.Visible = true;
+            btr_kvkor.Visible = true;
+            btr_obrznach.Visible = true;
+            btr_stepen.Visible = true;
+            btr_kubKor.Visible = true;
+            btr_factotial.Visible = true;
+            label1.Visible = true;
+            this.Width = 405;
+            this.Height = 286;
+            usualToolStripMenuItem.Enabled = true;
+            engineerToolStripMenuItem1.Enabled = false;
+
+        }
+
+       
     }
     class mehanizmcalkulyatora
-	{
-	/// <summary>
-	///Создаем перечисление Deystvie, для определения одного из четырех действия калькулятора.
-	/// </summary>
-		public enum Deystvie:int
-		{
-			NeopredelDeystvie = 0,
-			Slojenie = 1,
-			Vichitanie = 2,
-			Umnojenie = 3,
-			Delenie = 4,
-            StepenKvDigit = 5,
-            KvKoren = 6,
-            ObrZnach = 7,
-            VozvVStepen = 8
-		}
+    {
+        /// <summary>
+        ///Создаем перечисление Deystvie, для определения одного из четырех действия калькулятора.
+        /// </summary>
+        public enum Deystvie : int
+        {
+            NeopredelDeystvie = 0,
+            Slojenie = 1,
+            Vichitanie = 2,
+            Umnojenie = 3,
+            Delenie = 4,
+            VozvVStepen = 5
+        }
 
-	/// <summary>
-	/// Объявляем и инициализируем переменную, 
-	/// которая будет использоваться для смены знака при нажатии клавиши (+/-)
-	/// </summary>
+        /// <summary>
+        /// Объявляем и инициализируем переменную, 
+        /// которая будет использоваться для смены знака при нажатии клавиши (+/-)
+        /// </summary>
 
-		private static double peremennayaMinus = -1;
+        private static double peremennayaMinus = -1;
 
-		/// <summary>
-		/// Объвляем переменные, для работы калькулятора:
-		/// resultatVichisleniy - переменная для хранения
-		///  промежуточного результата в механизме калькулятора
-		///  resultatOutput - переменная, значение которой будет сниматься с экрана и  выводиться на него.
-		///  tekusheeDeystvieCalculatora - хранение одного из действия калькулятора.
-		///  pervoeChislo - переменная, в которую будет записываться число на экране
-		///   до нажатия на одну из четырех кнопок с действием.
-		///  vtoroeChislo - второе число на экране.
-		///  dobavlenierazryada при добавлении следующего  разряда эта переменная примет значение true;
-		///  ChislosTochkoy при добавлении десятичного разряда (знака точки) эта переменная примет значение true
-		/// </summary>
-	
-		private static double resultatVichisleniy;
-		private static string resultatOutput;
-		private static Deystvie tekusheeDeystvieCalculatora;
-		private static double pervoeChislo;
-		private static double vtoroeChislo;
-		private static bool dobavlenierazryada;
-		private static bool ChislosTochkoy;
- 
-		/// <summary>
-		/// В конструкторе класса mehanizmcalkulyatora инициализируем переменные 
-		/// ChislosTochkoy и dobavlenierazryada - при запуске калькулятора на экране 
-		/// нет ни разрядности, ни десятичной части.
-		/// </summary>
+        /// <summary>
+        /// Объвляем переменные, для работы калькулятора:
+        /// resultatVichisleniy - переменная для хранения
+        ///  промежуточного результата в механизме калькулятора
+        ///  resultatOutput - переменная, значение которой будет сниматься с экрана и  выводиться на него.
+        ///  tekusheeDeystvieCalculatora - хранение одного из действия калькулятора.
+        ///  pervoeChislo - переменная, в которую будет записываться число на экране
+        ///   до нажатия на одну из четырех кнопок с действием.
+        ///  vtoroeChislo - второе число на экране.
+        ///  dobavlenierazryada при добавлении следующего  разряда эта переменная примет значение true;
+        ///  ChislosTochkoy при добавлении десятичного разряда (знака точки) эта переменная примет значение true
+        /// </summary>
 
-		public mehanizmcalkulyatora ()
-		{
-			ChislosTochkoy = false;
-			dobavlenierazryada = false;
-		}
+        private static double resultatVichisleniy;
+        private static string resultatOutput;
+        private static Deystvie tekusheeDeystvieCalculatora;
+        private static double pervoeChislo;
+        private static double vtoroeChislo;
+        private static bool dobavlenierazryada;
+        private static bool ChislosTochkoy;
 
-			
-		/// <summary>
-		/// В этом методе переменная resultatOutput изменяется - при вводе числа ее значение перезаписывается.
-		/// </summary>
-		
+        /// <summary>
+        /// В конструкторе класса mehanizmcalkulyatora инициализируем переменные 
+        /// ChislosTochkoy и dobavlenierazryada - при запуске калькулятора на экране 
+        /// нет ни разрядности, ни десятичной части.
+        /// </summary>
 
-		public static string chislonaEkrane (string najatayaKlavisha)
-		{
-			resultatOutput = resultatOutput + najatayaKlavisha;
-			return (resultatOutput);
-		}
-		/// <summary>
-		/// Метод, в котором определяется peremenDeystviya - одно значение перечисления Deystvie,
-		///в зависимости от выбора  клавиши +, -, *,  или /
-		/// </summary>
-	
-		public static void DeystvieCalculatora (Deystvie peremenDeystviya)
-		{
-			try
-			{
-				if (resultatOutput != "" && !dobavlenierazryada)
-				{
-					pervoeChislo = System.Convert.ToDouble (resultatOutput);
-					tekusheeDeystvieCalculatora = peremenDeystviya;
-					resultatOutput = "";
-					ChislosTochkoy = false;
-				}			
-			}
-		
-			catch (Exception ex)
-			{
-				MessageBox.Show(ex.ToString());
-			}
-			finally
-			{
-			
-			}
-		}
+        public mehanizmcalkulyatora()
+        {
+            ChislosTochkoy = false;
+            dobavlenierazryada = false;
+        }
 
 
-
-	/// <summary>
-	/// При нажатии  кнопки +/- число на экране - tekusheeChislo умножается на -1,
-	///  а затем результат снова присваивается переменной resultatOutput.
-	/// </summary>
-	
-
-		public static string ZnakChisla ()
-		{
-			double tekusheeChislo;
-
-			if (resultatOutput != "")
-			{
-				tekusheeChislo = System.Convert.ToDouble (resultatOutput);
-				resultatOutput = System.Convert.ToString(tekusheeChislo * peremennayaMinus);
-			}
-		
-			return (resultatOutput);
-		}
-
-		/// <summary>
-		/// При нажатии кнопки ( , ) переменная resultatOutput приобретает дробную часть.
-		/// </summary>
-	
-
-		public static string ZnakTochki ()
-		{
-			if (!ChislosTochkoy && !dobavlenierazryada)
-			{
-				if (resultatOutput != "")
-					resultatOutput = resultatOutput + ",";
-				else
-					resultatOutput = "0,";
-
-				ChislosTochkoy = true;
-			}
-
-			return (resultatOutput);
-		}
-
-	/// <summary>
-	/// При нажатии кнопки ZnakRavno обрабатываются значения 
-	/// переменнных pervoeChislo и vtoroeChislo, результат присваивается переменной resultatVichisleniy 
-	/// которая  затем преобразуется в resultatOutput.
-	/// </summary>
+        /// <summary>
+        /// В этом методе переменная resultatOutput изменяется - при вводе числа ее значение перезаписывается.
+        /// </summary>
 
 
-		public static string ZnakRavno ()
-		{
-			bool proverkaOshibok = false;
+        public static string chislonaEkrane(string najatayaKlavisha)
+        {
+            resultatOutput = resultatOutput + najatayaKlavisha;
+            return (resultatOutput);
+        }
+        /// <summary>
+        /// Метод, в котором определяется peremenDeystviya - одно значение перечисления Deystvie,
+        ///в зависимости от выбора  клавиши +, -, *,  или /
+        /// </summary>
 
-			if (resultatOutput != "")
-			{
-				vtoroeChislo = System.Convert.ToDouble (resultatOutput);
-				dobavlenierazryada = true;
+        public static void DeystvieCalculatora(Deystvie peremenDeystviya)
+        {
+            try
+            {
+                if (resultatOutput != "" && !dobavlenierazryada)
+                {
+                    pervoeChislo = System.Convert.ToDouble(resultatOutput);
+                    tekusheeDeystvieCalculatora = peremenDeystviya;
+                    resultatOutput = "";
+                    ChislosTochkoy = false;
+                }
+            }
 
-				switch (tekusheeDeystvieCalculatora)
-				{
-					case Deystvie.NeopredelDeystvie:
-						proverkaOshibok = false;
-						break;
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
 
-					case Deystvie.Slojenie:
-						resultatVichisleniy = pervoeChislo + vtoroeChislo;
-						proverkaOshibok = true;
-						break;
+            }
+        }
 
-					case Deystvie.Vichitanie:
-						resultatVichisleniy = pervoeChislo - vtoroeChislo;
-						proverkaOshibok = true;
-						break;
 
-					case Deystvie.Umnojenie:
-						resultatVichisleniy = pervoeChislo * vtoroeChislo;
-						proverkaOshibok = true;
-						break;
+    public static string EngineerCalc(string parametr)
+        {
+            double chislo;
+            switch(parametr)
+            {
+                case "kvdigit":
+                    chislo = System.Convert.ToDouble(resultatOutput);
+                    resultatOutput = System.Convert.ToString(Math.Pow(chislo, 2));
+                    break;
 
-					case Deystvie.Delenie:
-						resultatVichisleniy = pervoeChislo / vtoroeChislo;
-						proverkaOshibok = true;
-						break;
+                case "KvKoren":
+                    chislo = System.Convert.ToDouble(resultatOutput);
+                    resultatOutput = System.Convert.ToString(Math.Sqrt(chislo));
+                    break;
 
-					
+                case "KubKoren":
+                    chislo = System.Convert.ToDouble(resultatOutput);
+                    resultatOutput = System.Convert.ToString(Math.Pow(chislo, 1.0 / 3.0));
+                    break;
 
-                    case Deystvie.StepenKvDigit:
-                        resultatVichisleniy = Math.Pow(pervoeChislo, 2);
+                case "ObrZnach":
+                    chislo = System.Convert.ToDouble(resultatOutput);
+                    resultatOutput = System.Convert.ToString(1 / chislo);
+                    break;
+
+                case "Factorial":
+                    chislo = System.Convert.ToDouble(resultatOutput);
+                    if ((chislo < 0) | (chislo % 1 > 0))
+                        resultatOutput = "Factorial doest't exist";
+                    else
+                    {
+                        int value = 1;
+                        for (int i = 1; i <= chislo; i++)
+                        {
+                            value = value * i;
+                        }
+                        resultatOutput = System.Convert.ToString(value);
+                    }
+                    break;
+
+            }
+            return resultatOutput;
+        }
+
+    /// <summary>
+    /// При нажатии  кнопки +/- число на экране - tekusheeChislo умножается на -1,
+    ///  а затем результат снова присваивается переменной resultatOutput.
+    /// </summary>
+
+
+    public static string ZnakChisla()
+        {
+            double tekusheeChislo;
+
+            if (resultatOutput != "")
+            {
+                tekusheeChislo = System.Convert.ToDouble(resultatOutput);
+                resultatOutput = System.Convert.ToString(tekusheeChislo * peremennayaMinus);
+            }
+
+            return (resultatOutput);
+        }
+
+        /// <summary>
+        /// При нажатии кнопки ( , ) переменная resultatOutput приобретает дробную часть.
+        /// </summary>
+
+
+        public static string ZnakTochki()
+        {
+            if (!ChislosTochkoy && !dobavlenierazryada)
+            {
+                if (resultatOutput != "")
+                    resultatOutput = resultatOutput + ",";
+                else
+                    resultatOutput = "0,";
+
+                ChislosTochkoy = true;
+            }
+
+            return (resultatOutput);
+        }
+
+        /// <summary>
+        /// При нажатии кнопки ZnakRavno обрабатываются значения 
+        /// переменнных pervoeChislo и vtoroeChislo, результат присваивается переменной resultatVichisleniy 
+        /// которая  затем преобразуется в resultatOutput.
+        /// </summary>
+
+
+
+        public static string ZnakRavno()
+        {
+            bool proverkaOshibok = false;
+
+            if (resultatOutput != "")
+            {
+                vtoroeChislo = System.Convert.ToDouble(resultatOutput);
+                dobavlenierazryada = true;
+
+                switch (tekusheeDeystvieCalculatora)
+                {
+                    case Deystvie.NeopredelDeystvie:
+                        proverkaOshibok = false;
+                        break;
+
+                    case Deystvie.Slojenie:
+                        resultatVichisleniy = pervoeChislo + vtoroeChislo;
                         proverkaOshibok = true;
                         break;
 
-                    case Deystvie.KvKoren: 
-                        resultatVichisleniy = Math.Sqrt(pervoeChislo);
+                    case Deystvie.Vichitanie:
+                        resultatVichisleniy = pervoeChislo - vtoroeChislo;
                         proverkaOshibok = true;
                         break;
 
-                    case Deystvie.ObrZnach:
-                        resultatVichisleniy = 1 / pervoeChislo;
+                    case Deystvie.Umnojenie:
+                        resultatVichisleniy = pervoeChislo * vtoroeChislo;
+                        proverkaOshibok = true;
+                        break;
+
+                    case Deystvie.Delenie:
+                        resultatVichisleniy = pervoeChislo / vtoroeChislo;
                         proverkaOshibok = true;
                         break;
 
@@ -814,18 +920,21 @@ namespace Calculator
                         break;
                 }
 
-				if (proverkaOshibok)
-					resultatOutput = System.Convert.ToString (resultatVichisleniy);
-			}
-			
-			return (resultatOutput);
-		}
+                if (proverkaOshibok)
+                    resultatOutput = System.Convert.ToString(resultatVichisleniy);
+            }
 
-	/// <summary>
-	/// При нажатии кнопки  С (сброс) значения переменных обнуляются.
-	/// </summary>
+            return (resultatOutput);
 
-		public static void Sbros ()
+        }
+
+   
+
+    /// <summary>
+    /// При нажатии кнопки  С (сброс) значения переменных обнуляются.
+    /// </summary>
+
+        public static void Sbros ()
 		{
 			resultatVichisleniy = 0;
 			pervoeChislo = 0;

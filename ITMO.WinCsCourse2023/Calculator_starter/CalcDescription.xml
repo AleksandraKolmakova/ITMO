@@ -39,6 +39,9 @@
             методу DeystvieCalculatora класса mehanizmcalkulyatora переменную перечисления Deystvie.
             </summary>
         </member>
+        <member name="M:Calculator.Calc.btr_kvdigit_Click(System.Object,System.EventArgs)">
+            Доп вычисления
+        </member>
         <member name="T:Calculator.mehanizmcalkulyatora.Deystvie">
              <summary>
             Создаем перечисление Deystvie, для определения одного из четырех действия калькулятора.
