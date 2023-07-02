@@ -92,6 +92,80 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator_starter", "Calcu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "ITMO.WinCsCourse2023\Calculator_starter\Calculator.csproj", "{A27CBA1C-371A-4708-BB01-9848A8B50505}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ITMO.HTML&XMLCourses2023", "ITMO.HTML&XMLCourses2023", "{0177E5C0-90C3-487F-A02F-1A45338A232C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML Labs", "HTML Labs", "{1071DFAC-9089-4161-A2EB-516F286EA49C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Part1", "Part1", "{19E35C82-990A-41A3-8F2B-54F7FD2B114F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab1", "Lab1", "{3E44D95B-9197-48E6-A56A-7E6D2E66C66D}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\Animal.jpg = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\Animal.jpg
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex1.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex1.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex2.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex2.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex3.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab1\ex3.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{5ADA2CF5-2237-4119-AACB-29BD2988B9A8}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex1_index.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex1_index.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex2_index.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex2_index.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex3_index.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex3_index.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex4_code.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex4_code.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex5_classification.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex5_classification.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex6_classification.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex6_classification.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex7_classification.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex7_classification.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex8_findings.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab2\Ex8_findings.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3", "Lab3", "{0471CEC8-9386-4FBD-B687-5A2E048DD3DB}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex1_classification.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex1_classification.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex1_index.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex1_index.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex2.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex2.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex3.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex3.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex4_about_buttons.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab3\Ex4_about_buttons.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab4", "Lab4", "{543989FA-2711-4157-8512-CE99F863323A}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex1.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex1.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex2.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex2.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex3.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex3.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex4.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex4.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex5_table.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab4\Ex5_table.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab5", "Lab5", "{1B543B53-A0BC-4614-A957-AE75C7D79834}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\button_1.jpg = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\button_1.jpg
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\button_4.jpg = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\button_4.jpg
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex1-3_index.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex1-3_index.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex3_classification.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex3_classification.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex4_map.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex4_map.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex5.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\Ex5.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\video.mp4 = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab5\video.mp4
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab6", "Lab6", "{1CCFB759-46F9-48CA-8664-57EE7B1A4926}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\enot.jpg = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\enot.jpg
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex1.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex1.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex2.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex2.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex3.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex3.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex4.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex4.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex5.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex5.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex6.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab6\Ex6.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab7", "Lab7", "{55458370-E923-4938-8CA9-EABD799BFF1C}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_1.css = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_1.css
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_1.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_1.html
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_2.css = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_2.css
+		ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_2.html = ITMO.HTML&XMLCourses2023\HTML Labs\Part1\Lab7\block_2.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -232,6 +306,15 @@ Global
 		{5D16AC4E-E27A-4607-BF32-59D50D0227A4} = {AF5AFDDE-F706-4BB4-AC2B-FBEC4C1E31CC}
 		{A6C0D23B-4ADE-4F46-B58E-21CB730D5529} = {535C0665-95CC-4CEC-AFBE-AA04BE831079}
 		{A27CBA1C-371A-4708-BB01-9848A8B50505} = {A6C0D23B-4ADE-4F46-B58E-21CB730D5529}
+		{1071DFAC-9089-4161-A2EB-516F286EA49C} = {0177E5C0-90C3-487F-A02F-1A45338A232C}
+		{19E35C82-990A-41A3-8F2B-54F7FD2B114F} = {1071DFAC-9089-4161-A2EB-516F286EA49C}
+		{3E44D95B-9197-48E6-A56A-7E6D2E66C66D} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{5ADA2CF5-2237-4119-AACB-29BD2988B9A8} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{0471CEC8-9386-4FBD-B687-5A2E048DD3DB} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{543989FA-2711-4157-8512-CE99F863323A} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{1B543B53-A0BC-4614-A957-AE75C7D79834} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{1CCFB759-46F9-48CA-8664-57EE7B1A4926} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
+		{55458370-E923-4938-8CA9-EABD799BFF1C} = {19E35C82-990A-41A3-8F2B-54F7FD2B114F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96A37B0C-8C98-4853-BBDD-975EED09B2D7}

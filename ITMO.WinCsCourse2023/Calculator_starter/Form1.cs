@@ -61,6 +61,7 @@ namespace Calculator
         
         private Label label1;
         private ToolTip toolTip1;
+        private Button btr_quadreq;
         private const string nul = "0";
 
 		public Calc()
@@ -131,6 +132,7 @@ namespace Calculator
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btr_kubKor = new System.Windows.Forms.Button();
             this.btr_factotial = new System.Windows.Forms.Button();
+            this.btr_quadreq = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -351,27 +353,27 @@ namespace Calculator
             this.usualToolStripMenuItem,
             this.engineerToolStripMenuItem1});
             this.engineerToolStripMenuItem.Name = "engineerToolStripMenuItem";
-            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.engineerToolStripMenuItem.Text = "View";
             // 
             // usualToolStripMenuItem
             // 
             this.usualToolStripMenuItem.Name = "usualToolStripMenuItem";
-            this.usualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usualToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.usualToolStripMenuItem.Text = "Usual";
             this.usualToolStripMenuItem.Click += new System.EventHandler(this.usualToolStripMenuItem_Click);
             // 
             // engineerToolStripMenuItem1
             // 
             this.engineerToolStripMenuItem1.Name = "engineerToolStripMenuItem1";
-            this.engineerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.engineerToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.engineerToolStripMenuItem1.Text = "Engineer";
             this.engineerToolStripMenuItem1.Click += new System.EventHandler(this.engineerToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -382,7 +384,7 @@ namespace Calculator
             // 
             // btr_kvdigit
             // 
-            this.btr_kvdigit.Location = new System.Drawing.Point(281, 92);
+            this.btr_kvdigit.Location = new System.Drawing.Point(281, 102);
             this.btr_kvdigit.Name = "btr_kvdigit";
             this.btr_kvdigit.Size = new System.Drawing.Size(40, 40);
             this.btr_kvdigit.TabIndex = 63;
@@ -394,7 +396,7 @@ namespace Calculator
             // 
             // btr_kvkor
             // 
-            this.btr_kvkor.Location = new System.Drawing.Point(327, 92);
+            this.btr_kvkor.Location = new System.Drawing.Point(327, 102);
             this.btr_kvkor.Name = "btr_kvkor";
             this.btr_kvkor.Size = new System.Drawing.Size(40, 40);
             this.btr_kvkor.TabIndex = 64;
@@ -406,7 +408,7 @@ namespace Calculator
             // 
             // btr_obrznach
             // 
-            this.btr_obrznach.Location = new System.Drawing.Point(281, 182);
+            this.btr_obrznach.Location = new System.Drawing.Point(281, 192);
             this.btr_obrznach.Name = "btr_obrznach";
             this.btr_obrznach.Size = new System.Drawing.Size(40, 40);
             this.btr_obrznach.TabIndex = 65;
@@ -418,7 +420,7 @@ namespace Calculator
             // 
             // btr_stepen
             // 
-            this.btr_stepen.Location = new System.Drawing.Point(281, 136);
+            this.btr_stepen.Location = new System.Drawing.Point(281, 146);
             this.btr_stepen.Name = "btr_stepen";
             this.btr_stepen.Size = new System.Drawing.Size(40, 40);
             this.btr_stepen.TabIndex = 66;
@@ -431,7 +433,7 @@ namespace Calculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(278, 72);
+            this.label1.Location = new System.Drawing.Point(278, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 67;
@@ -440,7 +442,7 @@ namespace Calculator
             // 
             // btr_kubKor
             // 
-            this.btr_kubKor.Location = new System.Drawing.Point(327, 136);
+            this.btr_kubKor.Location = new System.Drawing.Point(327, 146);
             this.btr_kubKor.Name = "btr_kubKor";
             this.btr_kubKor.Size = new System.Drawing.Size(40, 40);
             this.btr_kubKor.TabIndex = 68;
@@ -452,7 +454,7 @@ namespace Calculator
             // 
             // btr_factotial
             // 
-            this.btr_factotial.Location = new System.Drawing.Point(327, 182);
+            this.btr_factotial.Location = new System.Drawing.Point(327, 192);
             this.btr_factotial.Name = "btr_factotial";
             this.btr_factotial.Size = new System.Drawing.Size(40, 40);
             this.btr_factotial.TabIndex = 69;
@@ -462,11 +464,24 @@ namespace Calculator
             this.btr_factotial.Visible = false;
             this.btr_factotial.Click += new System.EventHandler(this.btr_factotial_Click);
             // 
+            // btr_quadreq
+            // 
+            this.btr_quadreq.Location = new System.Drawing.Point(281, 62);
+            this.btr_quadreq.Name = "btr_quadreq";
+            this.btr_quadreq.Size = new System.Drawing.Size(86, 34);
+            this.btr_quadreq.TabIndex = 70;
+            this.btr_quadreq.Text = "Quadratic equation";
+            this.toolTip1.SetToolTip(this.btr_quadreq, "Решение квадратного уравнения");
+            this.btr_quadreq.UseVisualStyleBackColor = true;
+            this.btr_quadreq.Visible = false;
+            this.btr_quadreq.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Calc
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(385, 244);
+            this.Controls.Add(this.btr_quadreq);
             this.Controls.Add(this.btr_factotial);
             this.Controls.Add(this.btr_kubKor);
             this.Controls.Add(this.label1);
@@ -664,6 +679,7 @@ namespace Calculator
             btr_kubKor.Visible = false;
             btr_factotial.Visible = false;
             label1.Visible = false;
+            btr_quadreq.Visible = false;
             this.Width = 290;
             this.Height = 287;
             usualToolStripMenuItem.Enabled = false;
@@ -680,6 +696,7 @@ namespace Calculator
             btr_kubKor.Visible = true;
             btr_factotial.Visible = true;
             label1.Visible = true;
+            btr_quadreq.Visible = true;
             this.Width = 405;
             this.Height = 286;
             usualToolStripMenuItem.Enabled = true;
@@ -687,7 +704,13 @@ namespace Calculator
 
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            KvadratnYravn Window = new KvadratnYravn();
+                if (Window.ShowDialog() != DialogResult.OK)
+                    return;
+            txtOutput.Text = Window.KorniUravneniya();
+        }
     }
     class mehanizmcalkulyatora
     {
