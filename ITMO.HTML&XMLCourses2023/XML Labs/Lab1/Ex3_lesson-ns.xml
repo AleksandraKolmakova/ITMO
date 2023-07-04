@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myns:TimeTable xmlns:myns="http://www.itmo.ru/xml/lessons" xmlns:resourse="https://itcenter.itmo.ru/obuchenie">
+	<myns:subject>
+		<myns:SubjectName>Основы программирования</myns:SubjectName>
+		<myns:TeacherName>Денис</myns:TeacherName>
+		<myns:TeacherLastName>Ямщиков</myns:TeacherLastName>
+		<myns:TeacherPatronymicName>Викторович</myns:TeacherPatronymicName>
+		<myns:Hours>45</myns:Hours>
+		<myns:StartDate>27.03.2023</myns:StartDate>
+		<myns:FinalDate>11.04.2023</myns:FinalDate>
+		<myns:FinalGrade>Зачет</myns:FinalGrade>
+		<resourse:InternetResourse>https://books.ifmo.ru/file/pdf/1917.pdf</resourse:InternetResourse>
+	</myns:subject>
+	
+	<myns:subject>
+		<myns:SubjectName>Программирование на C#</myns:SubjectName>
+		<myns:TeacherName>Никита</myns:TeacherName>
+		<myns:TeacherLastName>Осипов</myns:TeacherLastName>
+		<myns:TeacherPatronymicName>Алексеевич</myns:TeacherPatronymicName>
+		<myns:Hours>50</myns:Hours>
+		<myns:StartDate>13.04.2023</myns:StartDate>
+		<myns:FinalDate>28.04.2023</myns:FinalDate>
+		<myns:FinalGrade>Зачет</myns:FinalGrade>	
+		<resourse:InternetResourse>https://ru.wikipedia.org/wiki/C_Sharp</resourse:InternetResourse>		
+	</myns:subject>
+	
+	<myns:subject>
+		<myns:SubjectName>Введение в базы данных</myns:SubjectName>
+		<myns:TeacherName>Ирина</myns:TeacherName>
+		<myns:TeacherLastName>Осетрова</myns:TeacherLastName>
+		<myns:TeacherPatronymicName>Станиславовна</myns:TeacherPatronymicName>
+		<myns:Hours>35</myns:Hours>
+		<myns:StartDate>01.06.2023</myns:StartDate>
+		<myns:FinalDate>16.06.2023</myns:FinalDate>
+		<myns:FinalGrade>Зачет</myns:FinalGrade>	
+		<resourse:InternetResourse>https://www.mysqltutorial.org/</resourse:InternetResourse>		
+	</myns:subject>
+</myns:TimeTable>

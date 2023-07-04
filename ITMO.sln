@@ -220,6 +220,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{32F3AE
 		ITMO.HTML&XMLCourses2023\HTML Labs\Part2\Lab4\images\underline.png = ITMO.HTML&XMLCourses2023\HTML Labs\Part2\Lab4\images\underline.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XML Labs", "XML Labs", "{E497B11A-8957-4020-9154-DE52258368EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab1", "Lab1", "{C98076AF-49CD-406D-A1D9-7089815C3EFE}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex1_resume.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex1_resume.xml
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex2_lesson.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex2_lesson.xml
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex3_lesson-ns.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab1\Ex3_lesson-ns.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -376,6 +385,8 @@ Global
 		{6945675D-7003-4894-A889-AAAD8C0E5D0C} = {5B775231-1F47-4FB0-9D45-1BAC9B3D5812}
 		{CE6D1AEA-8CD8-467C-AF61-642F708A5F1D} = {6945675D-7003-4894-A889-AAAD8C0E5D0C}
 		{32F3AE81-C99B-48AF-96C5-39FA6F77CF90} = {6945675D-7003-4894-A889-AAAD8C0E5D0C}
+		{E497B11A-8957-4020-9154-DE52258368EE} = {0177E5C0-90C3-487F-A02F-1A45338A232C}
+		{C98076AF-49CD-406D-A1D9-7089815C3EFE} = {E497B11A-8957-4020-9154-DE52258368EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96A37B0C-8C98-4853-BBDD-975EED09B2D7}
