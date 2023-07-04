@@ -1,0 +1,10 @@
+<!ELEMENT TimeTable (subject+)>
+<!ELEMENT subject (SubjectName, TeacherName, TeacherLastName, TeacherPatronymicName, Hours, StartDate, FinalDate, FinalGrade)> 
+<!ELEMENT SubjectName (#PCDATA)> 
+<!ELEMENT TeacherName (#PCDATA)> 
+<!ELEMENT TeacherLastName (#PCDATA)>
+<!ELEMENT TeacherPatronymicName (#PCDATA)>
+<!ELEMENT Hours (#PCDATA)> 
+<!ELEMENT StartDate (#PCDATA)>
+<!ELEMENT FinalDate (#PCDATA)> 
+<!ELEMENT FinalGrade (#PCDATA)>

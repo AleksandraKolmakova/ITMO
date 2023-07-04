@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "Ex2_library_DTD.dtd">
+<library>
+	<book_catalog>
+		<book id="D1" isbn="978-5-91759-750-8" year="2022" issue="translation">
+			<authors>
+					<author>Тод Штрассер</author>
+			</authors>
+			<title>Волна</title>
+			<publishing>Самокат</publishing>
+			<annotation>Книга основана на реальных событиях, произошедших в 1967 году в одной из школ маленького калифорнийского городка&internet;</annotation>
+		</book>		
+
+		<book id="D2" isbn="978-5-91103-596-9" year="2021" issue="translation">
+			<authors>
+					<author>Беньямин</author>
+					<author>Вальтер</author>
+			</authors>
+			<title>Улица с односторонним движением</title>
+			<publishing>АД Маргинем Пресс</publishing>
+			<annotation>Сборник мемуаров&linux;</annotation>
+		</book>		
+	</book_catalog>
+	
+	<author_catalog>
+		<author_book idref="D1">Тод Штрассер</author_book>
+		<author_book idref="D2">Вальтер</author_book>
+		<author_book idref="D2">Беньямин</author_book>
+	</author_catalog>
+
+</library>
