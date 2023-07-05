@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<TimeTable>
+	<subject>
+		<SubjectName>Основы программирования</SubjectName>
+		<TeacherName>Денис</TeacherName>
+		<TeacherLastName>Ямщиков</TeacherLastName>
+		<TeacherPatronymicName>Викторович</TeacherPatronymicName>
+		<Hours>45</Hours>
+		<StartDate>27.03.2023</StartDate>
+		<FinalDate>11.04.2023</FinalDate>
+		<FinalGrade>Зачет</FinalGrade>		
+	</subject>
+	
+	<subject>
+		<SubjectName>Программирование на C#</SubjectName>
+		<TeacherName>Никита</TeacherName>
+		<TeacherLastName>Осипов</TeacherLastName>
+		<TeacherPatronymicName>Алексеевич</TeacherPatronymicName>
+		<Hours>50</Hours>
+		<StartDate>13.04.2023</StartDate>
+		<FinalDate>28.04.2023</FinalDate>
+		<FinalGrade>Зачет</FinalGrade>		
+	</subject>
+	
+	<subject>
+		<SubjectName>Введение в базы данных</SubjectName>
+		<TeacherName>Ирина</TeacherName>
+		<TeacherLastName>Осетрова</TeacherLastName>
+		<TeacherPatronymicName>Станиславовна</TeacherPatronymicName>
+		<Hours>35</Hours>
+		<StartDate>01.06.2023</StartDate>
+		<FinalDate>16.06.2023</FinalDate>
+		<FinalGrade>Зачет</FinalGrade>		
+	</subject>
+</TimeTable>

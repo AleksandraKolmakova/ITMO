@@ -237,6 +237,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{7E28F011-9
 		ITMO.HTML&XMLCourses2023\XML Labs\Lab2\Ex2_library_DTD.dtd = ITMO.HTML&XMLCourses2023\XML Labs\Lab2\Ex2_library_DTD.dtd
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3", "Lab3", "{B3089BDB-7DC1-49A2-A974-BB168CB9ABA4}"
+	ProjectSection(SolutionItems) = preProject
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson.xml
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson_XML.xsd = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson_XML.xsd
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -396,6 +402,7 @@ Global
 		{E497B11A-8957-4020-9154-DE52258368EE} = {0177E5C0-90C3-487F-A02F-1A45338A232C}
 		{C98076AF-49CD-406D-A1D9-7089815C3EFE} = {E497B11A-8957-4020-9154-DE52258368EE}
 		{7E28F011-99D9-4612-8FD2-4E4C9868638C} = {E497B11A-8957-4020-9154-DE52258368EE}
+		{B3089BDB-7DC1-49A2-A974-BB168CB9ABA4} = {E497B11A-8957-4020-9154-DE52258368EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96A37B0C-8C98-4853-BBDD-975EED09B2D7}
