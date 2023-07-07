@@ -241,6 +241,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab3", "Lab3", "{B3089BDB-7
 	ProjectSection(SolutionItems) = preProject
 		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson.xml
 		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson_XML.xsd = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex1_lesson_XML.xsd
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex2_resume.xml = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex2_resume.xml
+		ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex2_resume.xsd = ITMO.HTML&XMLCourses2023\XML Labs\Lab3\Ex2_resume.xsd
 	EndProjectSection
 EndProject
 Global
