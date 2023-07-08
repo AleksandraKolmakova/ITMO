@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<TimeTable>
+<TimeTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/ITMO/ITMO.HTML&amp;XMLCourses2023/XML%20Labs/Lab3/Ex1_lesson_XML.xsd">
 	<subject>
 		<SubjectName>Основы программирования</SubjectName>
 		<TeacherName>Денис</TeacherName>

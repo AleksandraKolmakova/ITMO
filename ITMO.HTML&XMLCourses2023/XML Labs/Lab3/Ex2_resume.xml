@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resume>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:/C:/ITMO/ITMO.HTML&amp;XMLCourses2023/XML%20Labs/Lab3/Ex2_resume.xsd">
 	<candidate id = "a">
 		<Name>Анна</Name>
 		<LastName>Ошемкова</LastName>
