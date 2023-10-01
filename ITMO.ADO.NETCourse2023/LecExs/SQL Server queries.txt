@@ -1,0 +1,36 @@
+CREATE PROCEDURE [dbo].[AdjustProductAvailability] 
+AS 
+  --SET NOCOUNT ON
+  UPDATE Products SET Discontinued=1 WHERE UnitPrice > 50 
+  SELECT ProductName, UnitPrice FROM Products WHERE Discontinued = 1 
+  UPDATE Products SET Discontinued=0 WHERE UnitPrice <= 50 
+  SELECT ProductName, UnitPrice FROM Products WHERE Discontinued = 0 
+  RETURN
+
+
+CREATE PROCEDURE [dbo].[CountProductsInCategory]
+  (
+    @CatID int,
+    @CatName nvarchar(15) OUTPUT
+  )
+AS
+  DECLARE @ProdCount int
+	
+  SELECT @CatName = Categories.CategoryName, 
+         @ProdCount = COUNT(Products.ProductID)
+  FROM Categories INNER JOIN Products 
+    ON Categories.CategoryID = Products.CategoryID
+  WHERE (Categories.CategoryID = @CatID)
+  GROUP BY Categories.CategoryName
+	
+  RETURN @ProdCount
+
+
+CREATE PROCEDURE dbo.SummarizeProducts AS
+	CREATE TABLE ProductSummary
+	( ProductName nvarchar(40),
+    CategoryName nvarchar(15) )
+
+
+CREATE PROCEDURE dbo.IncreaseProductPrices AS
+UPDATE Products SET UnitPrice = UnitPrice * 1.1;
