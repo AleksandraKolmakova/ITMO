@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+  
+@* Ex4
+@{
+    Layout = "_Layout";
+}
+<h3>Start page</h3>
+*@
+
+@*  Ex1-3
+    <form method="post">
+    <label for="name">Product</label><br/>
+    <input type="text" name="name"/><br/>
+    <label for="price">Price</label><br />
+    <input type="number" name="price" /><br />
+    <input type="submit" value="Get a dicount" /><br />
+</form>
+
+<h3>@Model.MessageRezult</h3>*@
+
+@*  Ex1-2
+    @{
+    @if(Model.IsCorrect)
+    {
+        <p>Name: <b>@Model.Product.Name</b></p>
+        <p>Price: <b>@Model.Product.Price</b></p>
+    }
+    else
+    {
+        <p>Wrong data</p>
+    }
+    }*@
+
+

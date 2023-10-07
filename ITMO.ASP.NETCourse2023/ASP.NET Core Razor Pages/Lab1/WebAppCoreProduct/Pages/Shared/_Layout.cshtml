@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Razor Pages</title>
+    </head>
+    <body>
+        <div>
+            <h1>Account system</h1>
+            <div>
+                <ul>
+                    <li><a asp-page="/Index">Main</a></li>
+                    <li><a asp-page="/Product">Product</a></li>
+                </ul>
+            </div>
+            @RenderBody()
+        </div>
+    <div>&#9400; @DateTime.Now.ToString("dd.MM.yyyy") - Kolmakova Aleksandra</div>
+    </body>
+</html>
+
+

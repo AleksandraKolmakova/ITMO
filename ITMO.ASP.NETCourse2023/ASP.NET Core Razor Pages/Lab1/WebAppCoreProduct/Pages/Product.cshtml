@@ -1,0 +1,29 @@
+﻿@page "{handler?}"
+@model ProductModel
+@{
+}
+<form method="post">
+    <label for="name">Product</label><br />
+    <input type="text" name="name" /><br />
+    <label for="price">Price</label><br />
+    <input type="number" name="price" /><br />
+    @*<input type="submit" value="Get a discount" /><br />*@
+    <input type="submit" asp-page-handler="" value="Get a discount" /><br />
+
+    <label for="discount">Write your discount(%)</label><br />
+    <input type="number" name="discount" /><br />
+
+    <input type="submit" asp-page-handler="Discount" value="Price with your discount" /><br />
+
+    <input type="submit" asp-page-handler="SaveYourMoney" value="How much money you can save" /><br />
+</form>
+
+<h3>@Model.MessageRezult</h3>
+
+@* Ex4  
+    @{
+    Layout = "_Layout";
+    }
+*@
+
+
