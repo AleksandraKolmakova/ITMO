@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Каталог насосов";
+}
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Каталог насосов</h3>
+        <table class="table-bordered">
+            <tr><td><p>Тип</p></td><td><p>Подача, м3/ч</p></td><td><p>Напор, м</p></td><td><p>Мощность, кВт</p></td><td><p>Размер входного патрубка, мм</p></td><td><p>Размер выходного патрубка, мм</p></td><td><p>Масса, кг</p></td></tr>
+            @foreach (var c in ViewBag.Pumps)
+            {
+                <tr><td><p>@c.Head</p></td><td><p>@c.Flow</p></td><td><p>@c.Pressure</p></td><td><p>@c.Power</p></td><td><p>@c.IntDiam</p></td><td><p>@c.OutdDiam</p></td><td><p>@c.Weight</p></td></tr>
+            }
+        </table>
+        <p><a asp-controller="Home" asp-action="CreateBid" asp->Подать запрос на покупку насоса &raquo;</a></p>
+    </div>
+</div>
+
+
+

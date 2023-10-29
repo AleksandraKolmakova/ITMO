@@ -1,0 +1,86 @@
+﻿@model IEnumerable<WebPumpsApp.Models.Pump>
+
+@{
+    ViewData["Title"] = "Каталог насосов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Каталог насосов</h1>
+
+<p>
+    <a asp-action="Create">Добавить новый насос в каталог</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Head)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Power)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IntDiam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OutdDiam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Head)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flow)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pressure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Power)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IntDiam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutdDiam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PumpId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PumpId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PumpId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <h5>Введите тип насоса, чтобы узнать перечень заявителей</h5>
+</div>
+<div id="results">
+    <form data-ajax="true" data-ajax-url="/Home/PumpSearch" data-ajax-update="#results" data-ajax-mode="under">
+        <input type="text" name="Name" />
+        <input type="submit" value="Поиск" />
+    </form>
+    @section scripts{
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.js" integrity="sha256-v2nySZafnswY87um3ymbg7p9f766IQspC5oqaqZVX2c=" crossorigin="anonymous"></script>
+    }
+</div>
+

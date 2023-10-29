@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Заявки";
+}
+
+
+<h3>Существующие заявки</h3>
+<table class="table">
+    <tr><td><p>Имя покупателя/название организации</p></td><td><p>Тип насоса </p></td></tr>
+    @foreach (var c in ViewBag.Bids)
+    {
+        <tr><td><p>@c.Name</p></td><td><p>@c.PumpHead </p></td></tr>
+    }
+</table>
+
+<h3>Заявка на оформление покупки и получение дополнительной информации</h3>
+<form method="post" action="">
+    <table class="table">
+        <tr><td><p>Введите свое имя покупателя или название организации </p></td><td><input type="text" name="Name" /> </td></tr>
+        <tr>
+            <td><p>Выберите из списка тип насоса :</p></td>
+            <td>
+                <select name="PumpHead">
+                    @foreach (var cr in ViewBag.Pumps)
+                    {
+                        <option>@cr.Head</option>
+                    }
+                </select>
+            </td>
+        </tr>
+        <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+    </table>
+    <p><a asp-controller="Home" asp-action="Index" asp->Вернуться на главную страницу &raquo;</a></p>
+</form>
+
+

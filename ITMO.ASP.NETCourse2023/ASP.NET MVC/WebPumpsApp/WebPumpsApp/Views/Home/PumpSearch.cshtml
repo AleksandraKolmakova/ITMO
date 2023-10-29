@@ -1,0 +1,10 @@
+﻿@model IEnumerable<WebPumpsApp.Models.Bid>
+<div id="results">
+    <h4> Все заявители на покупку насоса "@Model.First().PumpHead"</h4>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</div>
