@@ -23,7 +23,7 @@ int main()
 	scores.push_back(3);
 
 	//создание студента Петрова И.А.
-	student* stud = new student("Petrov", "Ivan", "Alekseevich", scores);
+	human* stud = new student("Petrov", "Ivan", "Alekseevich", scores);
 	//вывод на экран ФИО студента и среднего балла студента
 	cout << "Student's full name is: ";
 	stud->print_full_data();
@@ -32,7 +32,7 @@ int main()
 	//количество учебных часов
 	unsigned int teacher_work_time = 40;
 	//создание учителя Сергеева Д.С.
-	teacher* tch = new teacher("Segreev", "Dmitriy", "Sergeevich", teacher_work_time);
+	human* tch = new teacher("Segreev", "Dmitriy", "Sergeevich", teacher_work_time);
 	//вывод на экран ФИО учителя и количество учебных часов
 	cout << "\nTeacher's full name is: "; 
 	tch->print_full_data();
