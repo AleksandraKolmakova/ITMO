@@ -1,0 +1,7 @@
+Teacher 
+Name and last name are: Motr Marins Lesson: math Phone: 82345671122
+
+Teacher's name and last name are: Moris Nina; Lesson: math; Phone: 83345553322
+
+Student's name and last name are: Njlo Mkm; Faculty: music; Phone: 82345342233
+
